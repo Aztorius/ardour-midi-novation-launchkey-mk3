@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArdourMIDIBindings version="1.0.0" name="Novation LaunchKey 49 MK3">
+
+<!-- This mapping relies on the Basic MIDI preset in the LaunchKey 49 MK3. -->
+
+<!-- 9 faders implies bank of size 8 -->
+<DeviceInfo bank-size="8"/>
+
+<!-- Transport Control -->
+
+<!-- TO FIX -->
+<Binding channel="16" ctl="76" action="toggle-click"/>
+<!-- TO TEST -->
+<Binding channel="16" ctl="77" function="undo"/>
+<Binding channel="16" ctl="115" function="transport-roll"/>
+<Binding channel="16" ctl="116" function="transport-stop"/>
+<Binding channel="16" ctl="117" function="toggle-rec-enable"/>
+<Binding channel="16" ctl="118" action="loop-toggle"/>
+
+<!-- Gain controls. Faders are mapped to faders. -->
+
+<Binding channel="1" ctl="71" uri="/route/gain B1"/>
+<Binding channel="1" ctl="72" uri="/route/gain B2"/>
+<Binding channel="1" ctl="73" uri="/route/gain B3"/>
+<Binding channel="1" ctl="74" uri="/route/gain B4"/>
+<Binding channel="1" ctl="75" uri="/route/gain B5"/>
+<Binding channel="1" ctl="76" uri="/route/gain B6"/>
+<Binding channel="1" ctl="77" uri="/route/gain B7"/>
+<Binding channel="1" ctl="78" uri="/route/gain B8"/>
+<!-- TO FIX -->
+<Binding channel="1" ctl="79" uri="/bus/gain master"/>
+
+<!-- Pan controls. Encoders are mapped to pan direction. -->
+
+<Binding channel="1" ctl="21" uri="/route/pandirection S1"/>
+<Binding channel="1" ctl="22" uri="/route/panwidth S1"/>
+<!--
+<Binding channel="1" ctl="23" uri="/route/send/gain S1 1"/>
+<Binding channel="1" ctl="24" uri="/route/send/gain S1 2"/>
+<Binding channel="1" ctl="25" uri="/route/send/gain S1 3"/>
+<Binding channel="1" ctl="26" uri="/route/send/gain S1 4"/>
+<Binding channel="1" ctl="27" uri="/route/send/gain S1 5"/>
+<Binding channel="1" ctl="28" uri="/route/send/gain S1 6"/>
+-->
+<!-- Round buttons beside transport -->
+
+<Binding channel="16" ctl="103" action="Editor/select-next-route"/>
+<Binding channel="16" ctl="102" action="Editor/select-prev-route"/>
+
+<!-- Bank Control -->
+<!-- <Binding channel="16" ctl="102" action="prev-bank"/> -->
+<Binding channel="16" ctl="104" action="next-bank"/>
+
+<!-- Status controls -->
+<!-- Status buttons are mapped to solo toggles. -->
+
+<Binding channel="1" ctl-toggle="11" uri="/route/solo B1"/>
+<Binding channel="1" ctl-toggle="12" uri="/route/solo B2"/>
+<Binding channel="1" ctl-toggle="13" uri="/route/solo B3"/>
+<Binding channel="1" ctl-toggle="14" uri="/route/solo B4"/>
+<Binding channel="1" ctl-toggle="15" uri="/route/solo B5"/>
+<Binding channel="1" ctl-toggle="16" uri="/route/solo B6"/>
+<Binding channel="1" ctl-toggle="17" uri="/route/solo B7"/>
+<Binding channel="1" ctl-toggle="18" uri="/route/solo B8"/>
+<!-- TO FIX -->
+<Binding channel="1" ctl-toggle="19" uri="/bus/mute master"/>
+
+</ArdourMIDIBindings>
